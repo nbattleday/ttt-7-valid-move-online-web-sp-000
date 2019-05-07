@@ -1,4 +1,24 @@
-# code your #valid_move? method here
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
+def valid_move?(board, index)
+   if board[index] == 0
+     return true
+   else
+     return false
+   end
+   if board[index] == 100
+     return false
+   else
+     return true
+   end
+ end
 
-# re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
+board = [" ", " ", "X", " ", " ", " ", " ", "O", " "]
+
+def valid_move?(board, index)
+   if board[index] == 2
+     return true
+   else
+     return false
+   end
+end
